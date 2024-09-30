@@ -1,0 +1,24 @@
+#fake-loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  max-height: 2000px;
+  background-color: #e6e0e0;
+  transition: 0.8s;
+}
+#fake-loading .title-wrap {
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.4s;
+}
+#fake-loading.on .title-wrap {
+  font-size: 40px;
+  opacity: 1;
+}
+#fake-loading.off {
+  max-height: 0;
+  overflow: hidden;
+}
